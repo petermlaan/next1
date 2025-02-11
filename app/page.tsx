@@ -4,56 +4,25 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
+      <header>Cool navigation stuff</header>
       <main className={styles.main}>
-      <Image
-          src="/oldpik.jpg"
-          alt="old pik"
-          width={320}
-          height={320}
-        />
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+        <Image src="/oldpik.jpg" alt="old pik" width={320} height={320} />
+        <Image className={styles.logo} src="/next.svg" alt="Next.js logo" width={180} height={38} priority />
         <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
+          <li>Get started by editing <code>app/page.tsx</code>.</li>
           <li>Save and see your changes instantly.</li>
         </ol>
-        <Image
-          src="https://loremflickr.com/320/240"
-          alt="lorem pic"
-          width={320}
-          height={240}
-        />
+        <Image src="https://loremflickr.com/320/240" alt="lorem pic" width={320} height={240} />
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dicta rerum dolores eveniet sapiente. Suscipit doloremque molestiae deleniti enim facilis, error ex praesentium sapiente in, dolorum quidem, recusandae omnis fugit.</p>
         <div className={styles.ctas}>
-          <a
-            className={styles.primary}
+          <a className={styles.primary}
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
+            target="_blank" rel="noopener noreferrer">
+            <Image className={styles.logo} src="/vercel.svg" alt="Vercel logomark" width={20} height={20} />
             Deploy now
           </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
+          <a href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            className={styles.secondary} target="_blank" rel="noopener noreferrer">
             RTFM!!!
           </a>
         </div>
