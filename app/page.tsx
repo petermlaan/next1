@@ -5,6 +5,12 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+      <Image
+          src="/oldpik.jpg"
+          alt="old pik"
+          width={320}
+          height={320}
+        />
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -19,7 +25,13 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-
+        <Image
+          src="https://loremflickr.com/320/240"
+          alt="lorem pic"
+          width={320}
+          height={240}
+        />
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dicta rerum dolores eveniet sapiente. Suscipit doloremque molestiae deleniti enim facilis, error ex praesentium sapiente in, dolorum quidem, recusandae omnis fugit.</p>
         <div className={styles.ctas}>
           <a
             className={styles.primary}
@@ -42,7 +54,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className={styles.secondary}
           >
-            Read our docs
+            RTFM!!!
           </a>
         </div>
       </main>
